@@ -11,7 +11,7 @@ export function MiniPlayer() {
   if (pathname.startsWith("/player")) return null;
 
   return (
-    <div className="fixed bottom-[60px] inset-x-2 z-30 safe-bottom">
+    <div className="fixed bottom-[90px] inset-x-2 z-30 safe-bottom">
       <Link
         to="/player/$id"
         params={{ id: track.id }}
