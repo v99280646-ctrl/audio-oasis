@@ -7,12 +7,13 @@
       "config": { "distDir": "dist" }
     },
     {
-      "src": "dist/server/index.mjs",
-      "use": "@vercel/node"
+      "src": "api/index.mjs",
+      "use": "@vercel/node",
+      "config": { "runtime": "nodejs24.x" }
     }
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/dist/server/index.mjs" }
+    { "src": "/(.*)", "dest": "/api/index.mjs" }
   ]
 }
