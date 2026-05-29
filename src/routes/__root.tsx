@@ -113,8 +113,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="mx-auto max-w-md min-h-screen relative bg-background">
+        <main className="pb-32">
+          <Outlet />
+        </main>
+        <MiniPlayer />
+        <BottomNav />
+      </div>
     </QueryClientProvider>
   );
 }
