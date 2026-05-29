@@ -9,6 +9,8 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { BottomNav } from "@/components/BottomNav";
+import { MiniPlayer } from "@/components/MiniPlayer";
 
 function NotFoundComponent() {
   return (
