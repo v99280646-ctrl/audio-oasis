@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "builds": [
     { "src": "dist/server/index.mjs", "use": "@vercel/node" },
     { "src": "dist/client/**", "use": "@vercel/static" }
